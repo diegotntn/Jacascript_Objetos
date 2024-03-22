@@ -69,7 +69,3 @@ function changeWindow(window) {
     return window;
 }
 
-const programWindow = new ProgramWindow();
-
-changeWindow(programWindow);
-console.log(programWindow.size.width);
