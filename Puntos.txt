@@ -1,0 +1,41 @@
+//Punto 1
+const size = new Size(1080, 764);
+console.log(size.width);   
+console.log(size.height); 
+
+size.resize (1920, 1080);
+console.log(size.width);   
+console.log(size.height); 
+
+
+//Punto 2
+const point = new Position();
+console.log(point.x);   
+console.log(point.y); 
+
+point.move (100, 200);
+console.log(point.x);   
+console.log(point.y); 
+
+
+//Punto 3
+const programWindow = new ProgramWindow();
+console.log(programWindow.screenSize.width);
+
+
+//Punto 4
+const programWindow = new ProgramWindow();
+
+const newSize = new Size(600, 400);
+programWindow.resizeProgramWindow(newSize);
+console.log(programWindow.size.width);
+console.log(programWindow.size.height);
+
+
+//Punto 5
+const programWindow = new ProgramWindow();
+
+const newPosition = new Position(50, 100);
+programWindow.moveProgramWindow(newPosition);
+console.log(programWindow.position.x);
+console.log(programWindow.position.y);

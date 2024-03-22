@@ -71,7 +71,5 @@ function changeWindow(window) {
 
 const programWindow = new ProgramWindow();
 
-const newPosition = new Position(50, 100);
-programWindow.moveProgramWindow(newPosition);
-console.log(programWindow.position.x);
-console.log(programWindow.position.y);
+changeWindow(programWindow);
+console.log(programWindow.size.width);
