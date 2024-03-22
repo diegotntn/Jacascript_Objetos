@@ -39,8 +39,7 @@ class ProgramWindow{
         newWidth = Math.min(newWidth, maxWidth);
         newHeight = Math.min(newHeight, maxHeight);
 
-        this.size.width(newWidth);
-        this.size.height(newHeight);
+        this.size.resize(newWidth, newHeight);
     }
 
     moveProgramWindow(newPosition) {
@@ -71,4 +70,8 @@ function changeWindow(window) {
 }
 
 const programWindow = new ProgramWindow();
-console.log(programWindow.screenSize.width);
+
+const newSize = new Size(600, 400);
+programWindow.resizeProgramWindow(newSize);
+console.log(programWindow.size.width);
+console.log(programWindow.size.height);
