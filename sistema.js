@@ -69,3 +69,11 @@ function changeWindow(window) {
 
     return window;
 }
+
+const size = new Size(1080, 764);
+size.width;
+size.height;
+
+size.resize (1920, 1080);
+size.width;
+size.height;
