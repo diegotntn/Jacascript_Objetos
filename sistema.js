@@ -57,4 +57,15 @@ class ProgramWindow{
         this.position.x = newX;
         this.position.y = newY;
     }
+
+}
+
+function changeWindow(window) {
+    const newSize = new Size(400, 300);
+    const newPosition = new Position(100, 150);
+
+    window.resizeProgramWindow(newSize);
+    window.moveProgramWindow(newPosition);
+
+    return window;
 }
