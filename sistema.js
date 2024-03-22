@@ -70,10 +70,10 @@ function changeWindow(window) {
     return window;
 }
 
-const size = new Size(1080, 764);
-size.width;
-size.height;
+const point = new Position();
+console.log(point.x);   
+console.log(point.y); 
 
-size.resize (1920, 1080);
-size.width;
-size.height;
+point.move (100, 200);
+console.log(point.x);   
+console.log(point.y); 
