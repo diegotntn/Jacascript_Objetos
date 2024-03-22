@@ -42,4 +42,19 @@ class ProgramWindow{
         this.size.width(newWidth);
         this.size.height(newHeight);
     }
+
+    moveProgramWindow(newPosition) {
+        let newX = Math.max(0, newPosition.x);
+        let newY = Math.max(0, newPosition.y);
+
+        const maxX = this.screenSize.width - this.size.width;
+        const maxY = this.screenSize.height - this.size.height;
+
+       
+        newX = Math.min(newX, maxX);
+        newY = Math.min(newY, maxY);
+
+        this.position.x = newX;
+        this.position.y = newY;
+    }
 }
