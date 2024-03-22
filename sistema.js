@@ -70,10 +70,5 @@ function changeWindow(window) {
     return window;
 }
 
-const point = new Position();
-console.log(point.x);   
-console.log(point.y); 
-
-point.move (100, 200);
-console.log(point.x);   
-console.log(point.y); 
+const programWindow = new ProgramWindow();
+console.log(programWindow.screenSize.width);
